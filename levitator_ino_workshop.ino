@@ -1,9 +1,5 @@
 //=========================================================|
-//     Ekobots Innovation Ltda - www.ekobots.com.br        |
-//        Juan Sirgado y Antico - www.jsya.com.br          |
-//---------------------------------------------------------|
-//        Program Magnetic Levitator - 2016/02/06          |
-//               All rights reserved 2016                  |
+//  By ASSEMBLY - Make Smart Things
 //=========================================================|
 int anaPin = 1;   // Arduino Analogic Pin 1;
 int digPin = 5;   // Arduino Digital  Pin 5;
