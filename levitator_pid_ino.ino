@@ -5,12 +5,8 @@
 //=========================================================|
 int anaPin = 1;   // Arduino Analogic Pin 1
 int digPin = 5;   // Arduino Digital  Pin 5
-int subPin = 7;   // Arduino Digital  Pin 7
-int addPin = 8;   // Arduino Digital  Pin 8
-//
 int anaVal = 0;   // Analogic Valie
 int digVal = 0;   // Digital Value
-//
 int levVal = ; // Levitation Value
 //---------------------------------------------------------|
 // PID Values
@@ -32,15 +28,11 @@ void setup()
    Serial.begin(57600);
    //Serial.println("Levitator by JSyA");
    //Serial.println("Starting...");
-   // Digital Pins Work Mode Setup;
-   //TCCR0B = TCCR0B & B11111000 | B00000001; // for PWM frequency of 62500.00 Hz
    pinMode(digPin, OUTPUT);
-   pinMode(addPin, INPUT_PULLUP);
-   pinMode(subPin, INPUT_PULLUP);
    //
    setpoint = levVal;
    // Levitator initialization End; 
-   //Serial.println("Started.");
+   Serial.println("Started.");
 }
 //---------------------------------------------------------|
 void loop() // PID
@@ -63,7 +55,7 @@ void loop() // PID
    // With Base on Sensor Value and the Levitation Point;
    
   analogWrite(digPin, digVal);
-  //value_log(); // Show log values for debug;
+  value_log(); // Show log values for debug;
 
 }
 //---------------------------------------------------------|
