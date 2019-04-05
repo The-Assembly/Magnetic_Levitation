@@ -1,9 +1,7 @@
 //=========================================================|
-//     Ekobots Innovation Ltda - www.ekobots.com.br        |
-//        Juan Sirgado y Antico - www.jsya.com.br          |
+//     The Assembly - Make Smart Things
 //---------------------------------------------------------|
-//      Program Magnetic Levitator PID - 2016/10/06        |
-//               All rights reserved 2016                  |
+//      Program Magnetic Levitator PID 
 //=========================================================|
 int anaPin = 1;   // Arduino Analogic Pin 1
 int digPin = 5;   // Arduino Digital  Pin 5
